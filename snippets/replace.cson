@@ -1,0 +1,4 @@
+".source.ts":
+  "replace":
+    "prefix": "replace"
+    "body": "replace(${1:'document'})"

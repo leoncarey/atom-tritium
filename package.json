@@ -1,0 +1,27 @@
+{
+  "name": "tritium",
+  "version": "1.0.0",
+  "description": "Tritium language support in Atom",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/leoncarey/atom-tritium",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leoncarey/atom-tritium.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leoncarey/atom-tritium/issues"
+  },
+	"_atomModuleCache": {
+	  "version": 1,
+	  "dependencies": [],
+	  "extensions": {
+	    ".json": [
+	      "package.json"
+	    ]
+	  },
+	  "folders": []
+	}
+}

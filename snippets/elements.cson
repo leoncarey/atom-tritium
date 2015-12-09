@@ -1,0 +1,4 @@
+".source.ts":
+  "$":
+    "prefix": "$"
+    "body": "$(${1:'document'})"

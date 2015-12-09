@@ -1,0 +1,13 @@
+'fileTypes': [
+  'ts'
+]
+
+'name': 'Tritium'
+
+'patterns': [
+  {
+    'include': 'source.html'
+  }
+]
+
+'scopeName': 'source.ts'
