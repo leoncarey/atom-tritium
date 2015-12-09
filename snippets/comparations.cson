@@ -1,0 +1,19 @@
+".source.ts":
+  "match":
+    "prefix": "match"
+    "body": """
+		match(${1:string or regex}) {
+			with(${2:condition}) {
+				${0:# your development...}
+			}
+		}
+		"""
+  "match_not":
+    "prefix": "match_not"
+    "body": """
+		match_not(${1:string or regex}) {
+			with(${2:condition}) {
+				${0:# your development...}
+			}
+		}
+		"""

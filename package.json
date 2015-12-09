@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Tritium language support in Atom",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": "*",
+		"node": "*"
   },
   "homepage": "https://github.com/leoncarey/atom-tritium",
   "repository": {

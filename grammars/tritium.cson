@@ -6,7 +6,8 @@
 
 'patterns': [
   {
-    'include': 'source.html'
+    'match': '\\b(?i:(0x\\h*))'
+    'name': 'constant.numeric.integer.hexadecimal.python'
   }
 ]
 

@@ -1,0 +1,12 @@
+".source.ts":
+  "replace":
+    "prefix": "replace"
+    "body": "replace(${1:document})"
+
+	"text":
+    "prefix": "text complete"
+    "body": "text(${1:your text})"
+
+	"inner":
+    "prefix": "inner"
+    "body": "inner(${1:your text})"
