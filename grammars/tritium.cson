@@ -5,10 +5,109 @@
 'name': 'Tritium'
 
 'patterns': [
-  {
+	{
+		'match': '\$[\w\_]',
+		'name': 'variables_ts'
+	},  
+	{
     'match': '\\b(?i:(0x\\h*))'
     'name': 'constant.numeric.integer.hexadecimal.python'
-  }
+  },
+	{
+    'match': '^\\s*#.*$|^\\s*\/\/.*$'
+    'name': 'comment'
+  },
+	{
+		'match': '^\\s*log',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*else',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*not',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*attributes',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*attribute',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*remove_class_to',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*remove_class',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*remove',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*add_class_to',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*add_class',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*var',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*replace',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*move_here',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*move_to',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*move',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*match_not',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*match',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*text',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*@import|@import',
+		'name': 'extensions_ts'
+	},
+	{
+		'match': '^\\s*[$]',
+		'name': 'document_ts'
+	},
+	{
+		'match': '\".*\"',
+		'name': 'string_ts'
+	},
+	{
+		'match': "\'.*\'",
+		'name': 'string_ts'
+	}
 ]
 
 'scopeName': 'source.ts'
+
+
+
