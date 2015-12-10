@@ -2,14 +2,42 @@
   "$":
     "prefix": "$"
     "body": "$(${1:document})"
-
-	"remove":
-    "prefix": "remove"
-    "body": "remove()"
-
+  
   "remove":
     "prefix": "remove"
     "body": "remove(${1:document})"
+
+  "insert_top":
+    "prefix": "insert_top"
+    "body": "insert_top(${1:element})"
+
+  "insert_bottom":
+    "prefix": "insert_bottom"
+    "body": "insert_bottom(${1:element})"
+
+  "insert_after":
+    "prefix": "insert_after"
+    "body": "insert_after(${1:element})"
+
+  "insert_before":
+    "prefix": "insert_before"
+    "body": "insert_before(${1:element})"
+
+  "insert":
+    "prefix": "insert"
+    "body": "insert(${1:element}, ${1:position})"
+
+  "copy":
+    "prefix": "copy"
+    "body": "copy(${1:document}, ${2:document}, ${3:position})"
+
+  "copy_to":
+    "prefix": "copy_to"
+    "body": "copy_to(${1:document}, ${2:position})"
+
+  "copy_here":
+    "prefix": "copy_here"
+    "body": "copy_here(${1:document}, ${2:position})"
 
   "move":
     "prefix": "move"
@@ -22,3 +50,12 @@
   "move_here":
     "prefix": "move_here"
     "body": "move_here(${1:document}, ${2:position})"
+
+  "wrap":
+    "prefix": "wrap"
+    "body": "wrap(${1:element}, ${2:attribute})"
+
+  "wrap_text_children":
+    "prefix": "wrap_text_children"
+    "body": "wrap_text_children(${1:element})"
+

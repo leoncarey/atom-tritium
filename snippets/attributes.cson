@@ -1,24 +1,29 @@
 ".source.ts":
   "attribute":
     "prefix": "attribute"
-    "body": "attribute(${1:attribute name}, ${2:attribute value})"
+    "body": "attribute(${1:name}, ${2:value})"
 
   "attributes":
     "prefix": "attributes"
-    "body": "attributes(${1:attribute name}: ${2:attribute value})"
+    "body": """
+			attributes(
+				${1:name}: ${2:value},
+				${3:name}: ${4:value}
+			)
+		"""
 
   "add_class":
     "prefix": "add_class"
-    "body": "add_class(${1:class name})"
+    "body": "add_class(${1:name})"
 
   "add_class_to":
     "prefix": "add_class_to"
-    "body": "add_class_to(${1:document}, ${2:class name})"
+    "body": "add_class_to(${1:document}, ${2:name})"
 
   "remove_class":
     "prefix": "remove_class"
-    "body": "remove_class(${1:class name})"
+    "body": "remove_class(${1:name})"
 
   "remove_class_to":
     "prefix": "remove_class_to"
-    "body": "remove_class_to(${1:document}, ${2:class name})"
+    "body": "remove_class_to(${1:document}, ${2:name})"

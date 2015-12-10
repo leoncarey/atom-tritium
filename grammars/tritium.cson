@@ -6,23 +6,139 @@
 
 'patterns': [
 	{
-		'match': '\$[\w\_]',
+		'match': '\".*\"',
+		'name': 'string_ts'
+	},
+	{
+		'match': "\'.*\'",
+		'name': 'string_ts'
+	},
+	{
+		'match': '[$|%]+[a-zA-Z0-9\_]+',
 		'name': 'variables_ts'
-	},  
+	},
+	{
+		'match': '^\\s*[$|%]+[a-zA-Z0-9\_]+',
+		'name': 'variables_ts'
+	},
 	{
     'match': '\\b(?i:(0x\\h*))'
     'name': 'constant.numeric.integer.hexadecimal.python'
   },
 	{
-    'match': '^\\s*#.*$|^\\s*\/\/.*$'
+    'match': '^\\s*#.*$|^\\s*\/\/.*$|^\\s*\/\*.*\*\/$'
     'name': 'comment'
   },
+	{
+    'match': '#.*$|\/\/.*$|\/\*.*\*\/$'
+    'name': 'comment'
+  },
+	{
+		'match': '^\\s*html',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*value',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*rewrite_link',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*rewrite',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*capitalcase',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*with',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*prepend',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*\set',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*fetch',
+		'name': 'function_ts'
+	},
+	{
+		'match': 'fetch',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*regexp',
+		'name': 'function_ts'
+	},
+	{
+		'match': 'regexp',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*remove_\self_if_empty',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*capture',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*concat',
+		'name': 'function_ts'
+	},
+	{
+		'match': 'concat',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*inject_before',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*inject',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*insert_javascript_after',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*insert_top',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*in\sert_bottom',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*in\sert_before',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*in\sert_after',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*in\sert',
+		'name': 'function_ts'
+	},
 	{
 		'match': '^\\s*log',
 		'name': 'function_ts'
 	},
 	{
-		'match': '^\\s*else',
+		'match': '^\\s*el\se',
+		'name': 'function_ts'
+	},
+	{
+		'match': ' el\se',
 		'name': 'function_ts'
 	},
 	{
@@ -38,11 +154,15 @@
 		'name': 'function_ts'
 	},
 	{
-		'match': '^\\s*remove_class_to',
+		'match': '^\\s*attr',
 		'name': 'function_ts'
 	},
 	{
-		'match': '^\\s*remove_class',
+		'match': '^\\s*remove_cla\s\s_to',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*remove_cla\s\s',
 		'name': 'function_ts'
 	},
 	{
@@ -66,11 +186,31 @@
 		'name': 'function_ts'
 	},
 	{
+		'match': '^\\s*copy_here',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*copy_to',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*copy_children_to',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*copy',
+		'name': 'function_ts'
+	},
+	{
 		'match': '^\\s*move_here',
 		'name': 'function_ts'
 	},
 	{
 		'match': '^\\s*move_to',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*move_children_to',
 		'name': 'function_ts'
 	},
 	{
@@ -86,7 +226,35 @@
 		'name': 'function_ts'
 	},
 	{
+		'match': '^\\s*wrap_text_children',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*inner_wrap',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*unwrap',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*wrap_together',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*wrap',
+		'name': 'function_ts'
+	},
+	{
 		'match': '^\\s*text',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*inner',
+		'name': 'function_ts'
+	},
+	{
+		'match': '^\\s*name',
 		'name': 'function_ts'
 	},
 	{
@@ -97,14 +265,6 @@
 		'match': '^\\s*[$]',
 		'name': 'document_ts'
 	},
-	{
-		'match': '\".*\"',
-		'name': 'string_ts'
-	},
-	{
-		'match': "\'.*\'",
-		'name': 'string_ts'
-	}
 ]
 
 'scopeName': 'source.ts'

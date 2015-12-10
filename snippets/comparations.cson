@@ -17,3 +17,17 @@
 			}
 		}
 		"""
+  "with":
+    "prefix": "with"
+    "body": """
+			with(${1:condition}) {
+				${0:# your development...}
+			}
+		"""
+  "else":
+    "prefix": "else"
+    "body": """
+			else() {
+				${0:# your development...}
+			}
+		"""
